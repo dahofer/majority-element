@@ -1,5 +1,5 @@
 def majority_element(elements)
-  counts = elements.reduce(Hash.new(0)) do |collector, element|
+  counts = elements.each_with_object(Hash.new(0)) do |element, collector|
     collector[element] += 1
     collector
   end

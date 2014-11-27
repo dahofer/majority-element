@@ -1,5 +1,5 @@
 def majority_element(elements)
-  counts = elements.inject(Hash(String, Int32).new(0)) do |collector, element|
+  counts = elements.each_with_object(Hash(String, Int32).new(0)) do |element, collector|
     collector[element] += 1
     collector
   end
