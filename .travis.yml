@@ -1,1 +1,2 @@
+# TODO: Change this to running "make" when Travis supports multiple languages in a single build.
 script: /usr/bin/env true
