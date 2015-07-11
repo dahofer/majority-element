@@ -1,6 +1,6 @@
 TARGET = all
 
-all: majority-element-hs majority-element-go majority-element-swift majority-element-crystal
+all: majority-element-hs majority-element-go majority-element-crystal
 	@echo ""
 	@echo "Crystal"; ./average -n 10 ./majority_element_cr medium-input.txt > /dev/null
 	@echo ""
@@ -22,4 +22,4 @@ majority-element-crystal: majority_element_cr.cr
 	crystal build --release $?
 
 clean:
-	rm -f $(TARGET) majority_element_cr majority-element-go majority-element-hs majority-element-hs.hi majority-element-hs.o majority-element-swift
+	rm -f $(TARGET) majority_element_cr majority-element-go majority-element-hs majority-element-hs.hi majority-element-hs.o
