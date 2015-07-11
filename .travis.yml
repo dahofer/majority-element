@@ -1,5 +1,5 @@
 # TODO: Change this to running "make" when Travis supports multiple languages in a single build.
-script: /usr/bin/env true
+script: make
 
 before_install:
   - sudo apt-get update -qq
