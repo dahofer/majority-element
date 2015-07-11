@@ -21,4 +21,4 @@ main = do
     let parsedInput = read ("[" ++ (head $ lines $ contents) ++ "]") :: [Int]
     case algorithm of "naive" -> print $ majority_element_naive $ parsedInput
                       "sorting" -> print $ majority_element_sorted $ parsedInput
-		      other -> print "Please specify a valid algorithm (one of: naive, sorting)."
+                      other -> print "Please specify a valid algorithm (one of: naive, sorting)."
