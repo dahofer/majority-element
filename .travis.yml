@@ -1,2 +1,10 @@
 # TODO: Change this to running "make" when Travis supports multiple languages in a single build.
 script: /usr/bin/env true
+
+before_install:
+  - sudo apt-get update -qq
+  - sudo apt-get install -y haskell-platform
+  - sudo apt-get install -y golang-go
+  - sudo apt-get install -y ruby
+  
+language: crystal
