@@ -5,12 +5,12 @@ def majority_element(elements)
   end
 
   result = counts.map do |element, count|
-    count > elements.count / 2 ? element : nil
+    count > elements.size / 2 ? element : nil
   end.compact
 
-  if result.count == 0
+  if result.size == 0
     return nil
-  elsif result.count == 1
+  elsif result.size == 1
     return result.first
   end
 
