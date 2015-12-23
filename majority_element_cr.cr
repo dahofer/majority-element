@@ -4,9 +4,9 @@ def majority_element(elements)
     collector
   end
 
-  result = counts.map do |element, count|
-    count > elements.size / 2 ? element : nil
-  end.compact
+  result = counts.select do |element, count|
+    count > elements.size / 2
+  end
 
   if result.size == 0
     return nil

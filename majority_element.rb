@@ -4,8 +4,8 @@ def majority_element(elements)
     collector
   end
 
-  result = counts.select do |key, value|
-    value > elements.count / 2
+  result = counts.select do |element, count|
+    count > elements.count / 2
   end.keys
 
   if result.count == 0
